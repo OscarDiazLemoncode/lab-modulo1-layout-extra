@@ -1,0 +1,18 @@
+@use './base/reset' as *;
+@use './abstracts/variables' as v;
+
+
+:root{
+    color-scheme: only dark;
+    background-color: v.$page_bg_color;
+    font-family: v.$font-family, Helvetica, Arial, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}

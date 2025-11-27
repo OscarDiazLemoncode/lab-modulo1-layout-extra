@@ -1,0 +1,26 @@
+{
+  "name": "Lemoncode layout extra",
+  "short_name": "Layout extra",
+  "start_url": "/",
+  "theme_color": "#295427",
+  "background_color": "#295427",
+  "display": "standalone",
+  "description": "Layout extra de miembros de Lemoncode",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]  
+}
