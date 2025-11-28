@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixin' as mx;
+
+.nav{
+    background-color: v.$secondary_bg_color;
+    color: v.$light_txt_color;
+    width: fit-content;
+    height: 100vh;
+    
+    h2{
+        @include mx.custom_font_size(v.$size_base * 3);
+        padding: v.$size_base * 2;
+        text-align: center;
+    }
+    
+    &__content{
+        position: sticky;
+        top: v.$size-base * 5;
+        
+        &__menu{
+            background-color: v.$mid_bg_color;
+            @include mx.outline( v.$light_border_color);                       
+            
+            a {
+                @include mx.outline( v.$light_border_color);            
+                padding:v.$size_base v.$size_base * 2;
+                display: block;
+            }
+        }
+    }
+
+}

@@ -1,16 +1,27 @@
 @use './base/reset' as *;
 @use './abstracts/variables' as v;
+@use './layout/header' as header;
+@use './layout/nav' as nav;
+@use './layout/main' as main;
+@use './layout/footer' as footer;
 
 
 :root{
-    color-scheme: only dark;
+    color-scheme: light dark;
     background-color: v.$page_bg_color;
     font-family: v.$font-family, Helvetica, Arial, sans-serif;
+    color: v.$dark_txt_color;
 }
 
 html{
   scroll-behavior: smooth;
 }
+
+img{
+  width: 100%;
+  display: block;
+}
+
 *,
 ::before,
 ::after {

@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixin' as mx;
+
+.footer{
+    background-color: v.$secondary_bg_color;
+    color: v.$light_txt_color;
+    padding: v.$size-base * 4;
+    
+    &__content{
+        @include mx.max-width-vw;
+    }
+
+    &__content__title {
+            text-align: center;
+            @include mx.custom_font_size(v.$size-base * 2.5)
+    }
+   
+}

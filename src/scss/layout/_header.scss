@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixin' as mx;
+
+.header{
+    background-color: v.$primary_bg_color;
+    padding: v.$size_base * 2;
+
+    &__content{
+        @include mx.max_width_vw;
+        @include mx.flex(column, space-between, v.$size_base * 5, normal )
+    }
+
+    &__content__toolbar{
+        @include mx.flex(row, space-between)        
+    }
+
+    & h1{
+        @include mx.custom_font_size(v.$size_base * 4);
+        color: v.$light_txt_color;
+    }
+}

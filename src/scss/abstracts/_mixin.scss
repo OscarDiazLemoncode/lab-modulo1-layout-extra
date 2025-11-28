@@ -1,0 +1,31 @@
+@use './variables' as v;
+
+@mixin flex($direction, $justify, $gap:v.$size_base, $align: center, $wrap:wrap){
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    justify-content:$justify;
+    align-items: $align;
+    gap:$gap;
+}
+
+@mixin custom_font_size($size, $multiplicator:1){
+    font-size: $size * $multiplicator;
+}
+
+@mixin outline($color, $size:1px, $style:solid){
+    outline: $size $style $color;
+}
+
+
+@mixin max_width_vw($width:1920px){
+    max-width: $width;
+    margin: 0 auto;
+}
+
+/* Queries */
+@mixin media-querie($size) {
+    @media (width <= $size){
+        @content;
+    }
+}
