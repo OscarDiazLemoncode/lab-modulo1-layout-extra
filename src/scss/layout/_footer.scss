@@ -2,8 +2,8 @@
 @use '../abstracts/mixin' as mx;
 
 .footer{
-    background-color: v.$secondary_bg_color;
-    color: v.$light_txt_color;
+    background-color: v.$primary_bg_color;
+    color: v.$secondary_bg_color;
     padding: v.$size-base * 4;
     
     &__content{
@@ -12,7 +12,11 @@
 
     &__content__title {
             text-align: center;
-            @include mx.custom_font_size(v.$size-base * 2.5)
+            @include mx.custom_font_size(v.$size-base * 2.5);
+            
+            @include mx.media_querie(v.$tablet_mobile){
+                text-align: left;
+            }
     }
    
 }

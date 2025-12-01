@@ -24,7 +24,7 @@
 }
 
 /* Queries */
-@mixin media-querie($size) {
+@mixin media_querie($size) {
     @media (width <= $size){
         @content;
     }

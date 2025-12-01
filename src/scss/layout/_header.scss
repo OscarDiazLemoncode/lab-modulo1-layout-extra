@@ -18,4 +18,10 @@
         @include mx.custom_font_size(v.$size_base * 4);
         color: v.$light_txt_color;
     }
+
+    & input{
+        padding: v.$size-base;;
+        border-radius: v.$size-base;;
+        border: none;
+    }
 }

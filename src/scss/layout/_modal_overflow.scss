@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixin' as mx;
+
+.overflow{
+    width: 100dvw;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: v.$secondary_bg_color;
+    color: v.$light_txt_color;
+    display: grid;
+    place-content: center;
+
+    &__content__logo{
+        width: 200px;
+    }
+
+    &__content__form{
+        @include mx.flex(column, start, v.$size_base * 2, center, nowrap);
+
+        & input{
+            padding: v.$size-base;;
+        border-radius: v.$size-base;;
+        border: none;
+        }
+    }
+}
+.overflow.to__hidden{
+    display: none;
+}
