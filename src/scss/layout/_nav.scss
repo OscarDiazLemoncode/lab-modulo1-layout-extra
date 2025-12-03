@@ -16,7 +16,7 @@
     
     h2{
         @include mx.custom_font_size(v.$size_base * 3);
-        padding: v.$size_base * 2;
+        padding: v.$size_base * 3;
         text-align: center;
     }
     

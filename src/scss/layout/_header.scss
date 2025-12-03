@@ -3,7 +3,7 @@
 
 .header{
     background-color: v.$primary_bg_color;
-    padding: v.$size_base * 2;
+    padding: v.$size_base * 3;
 
     &__content{
         @include mx.max_width_vw;
@@ -11,7 +11,13 @@
     }
 
     &__content__toolbar{
-        @include mx.flex(row, space-between)        
+        @include mx.flex(row, space-between);
+        
+        & .header__toolbar__name{
+            width: 20ch;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
     & h1{
